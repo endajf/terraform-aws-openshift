@@ -3,6 +3,9 @@ set -x
 # Elevate priviledges, retaining the environment.
 sudo -E su
 
+# Install Skopeo for checking container availability
+yum install -y skopeo
+
 # Install dev tools.
 yum install -y "@Development Tools" python2-pip openssl-devel python-devel gcc libffi-devel
 
